@@ -1,5 +1,5 @@
 {
-  "name": "brackets-encode-decode",
+  "name": "encode-decode-for-brackets",
   "version": "1.0.0",
   "description": "convert text selections in Brackets",
   "main": "main.js",
