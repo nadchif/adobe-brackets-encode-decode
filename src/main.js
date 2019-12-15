@@ -3,7 +3,12 @@
 // eslint-disable-next-line no-unused-vars
 /* global define, $, brackets, window */
 
-/** This extension allows you to encode/decode selection */
+/**
+ *  File: Main.js
+ *  Author: Chif <nadchif@gmail.com>
+ *  Description:  This extension allows you to encode/decode selection
+ */
+
 define(function(require, exports, module) {
   'use strict';
 
