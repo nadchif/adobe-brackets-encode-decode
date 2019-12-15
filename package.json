@@ -1,0 +1,34 @@
+{
+  "name": "brackets-encode-decode",
+  "version": "1.0.0",
+  "description": "convert text selections in Brackets",
+  "main": "main.js",
+  "scripts": {
+    "test": "eslint src/main.js",
+    "zip": "bestzip encode-decode.zip convertors/* main.js package.json",
+    "build": "eslint ./src/* && babel src -d ."
+  },
+  "keywords": [
+    "brackets",
+    "encode",
+    "decode",
+    "hex",
+    "bin",
+    "base64",
+    "html-entities",
+    "uri"
+  ],
+  "author": "nadchif",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "bestzip": "^2.1.5",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1"
+  }
+}
