@@ -18,7 +18,7 @@ Currently it supports:
 * URI to String
 * Br to Newline
 
-**Missing a convertor?** Please feel free to open an issue or contribute to the project  ([See CONTRIBUTING.md](https://github.com/nadchif/html-duration-picker.js/blob/master/CONTRIBUTING.md)).
+**Missing a convertor?** Please feel free to open an issue or contribute to the project  ([See CONTRIBUTING.md](https://github.com/nadchif/adobe-brackets-encode-decode/blob/master/CONTRIBUTING.md)).
 
 
 
@@ -27,4 +27,4 @@ Currently it supports:
 GPL-3.0
 
 ## Contributions
-Contributions and suggestions are very welcome and wanted. I try to respond to pull requests within 48 hours. For more information see [CONTRIBUTING.md](https://github.com/nadchif/html-duration-picker.js/blob/master/CONTRIBUTING.md).
+Contributions and suggestions are very welcome and wanted. I try to respond to pull requests within 48 hours. For more information see [CONTRIBUTING.md](https://github.com/nadchif/adobe-brackets-encode-decode/blob/master/CONTRIBUTING.md).
