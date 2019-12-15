@@ -25,9 +25,9 @@ Contributions and suggestions are very welcome and wanted. I try to respond to p
 	* https://www.taniarascia.com/how-to-install-and-use-node-js-and-npm-mac-and-windows/
 	
 
-3. Make the fix or add feature to ```src/main.js```
+5. Make the fix or add feature to ```src/main.js```
 
-5. Run compile the extension to use/test it in Brackets
+        Run compile the extension to use/test it in Brackets using the command:
 
 	```
 	npm run build
