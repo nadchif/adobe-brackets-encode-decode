@@ -1,6 +1,6 @@
 node_modules
 .DS_Store
-convertors
-main.js
+/convertors
+/main.js
 encode-decode
 encode-decode.zip
