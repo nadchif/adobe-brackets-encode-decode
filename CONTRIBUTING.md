@@ -25,16 +25,13 @@ Contributions and suggestions are very welcome and wanted. I try to respond to p
 	* https://www.taniarascia.com/how-to-install-and-use-node-js-and-npm-mac-and-windows/
 	
 
-5. Make the fix or add feature to ```src/main.js```
+5. Make the fix or add feature to `src/main.js`
 
-        Run compile the extension to use/test it in Brackets using the command:
+ 	Run compile the extension to use/test it in Brackets using `npm run build`
+ 
+	 Restart Brackets via `Debug > Reload With Extensions` to see your changes.
 
-	```
-	npm run build
-	```
- 	Restart Brackets via `Debug > Reload With Extensions` to see your changes.
-
-	To debug problems, use `Debug > Show Developer Tools`. You can use console.log(), set breakpoints, etc.
+	 To debug problems, use `Debug > Show Developer Tools`. You can use console.log(), set breakpoints, etc.
 
 6. Sync your fork to make sure you have the latest changes.
  	
