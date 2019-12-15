@@ -7,29 +7,36 @@ Contributions and suggestions are very welcome and wanted. I try to respond to p
 
 	[How do I do this?](https://help.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository)
 
-2. Clone your forked repository and setup development environment
+2. Open your extensions folder by selecting `Help > Show Extensions Folder` in Brackets
 
+3. Clone your forked repository inside the `user` folder in the folder from step 2
 	```
-	git clone https://github.com/YOUR-USERNAME/html-duration-picker.js
-	cd html-duration-picker.js
-	npm install
+	git clone https://github.com/YOUR-USERNAME/adobe-brackets-encode-decode
+	cd adobe-brackets-encode-decode
 	```
 	Resources:
 	* https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+	
+4. Setup development environment
+	```
+	npm install
+	```
+	Resources:
 	* https://www.taniarascia.com/how-to-install-and-use-node-js-and-npm-mac-and-windows/
 	
 
 3. Make the fix or add feature to ```src/main.js```
 
-	// TODO: Add details on how to do build, test in brackets, zip
-
-4. Run tests to make sure there are no lint errors
+5. Run compile the extension to use/test it in Brackets
 
 	```
-	npm test
+	npm run build
 	```
+ 	Restart Brackets via `Debug > Reload With Extensions` to see your changes.
 
-5. Sync your fork to make sure you have the latest changes.
+	To debug problems, use `Debug > Show Developer Tools`. You can use console.log(), set breakpoints, etc.
+
+6. Sync your fork to make sure you have the latest changes.
  	
 	```
 	# Fetch upstream master and merge with your repo's master branch
@@ -44,12 +51,12 @@ Contributions and suggestions are very welcome and wanted. I try to respond to p
 	Resources:
 	* https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork
 	* https://gist.github.com/Chaser324/ce0505fbed06b947d962#cleaning-up-your-work
-6. Create a pull request.
+7. Create a pull request.
 
 	Resources:
 	* https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork
 	* https://gist.github.com/Chaser324/ce0505fbed06b947d962
 	
-7. Wait for the maintainer to respond. 
+8. Wait for the maintainer to respond. 
 
 Thank you for you for your awesome contribution :-)
