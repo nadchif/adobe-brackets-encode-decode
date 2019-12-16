@@ -1,8 +1,8 @@
 {
   "name": "encode-decode-for-brackets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "Encode - Decode for Brackets",
-  "homepage":"https://github.com/nadchif/adobe-brackets-encode-decode",
+  "homepage": "https://github.com/nadchif/adobe-brackets-encode-decode",
   "description": "Encode or Decode text selections to and from various formats in Brackets ",
   "main": "main.js",
   "scripts": {
