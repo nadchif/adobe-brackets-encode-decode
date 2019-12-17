@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "title": "Encode - Decode for Brackets",
   "homepage": "https://github.com/nadchif/adobe-brackets-encode-decode",
-  "description": "Encode or Decode text selections to and from various formats in Brackets ",
+  "description": "Encode or Decode text selections to and from various formats in Brackets. Supports Base64, Bin, HTML Entities, URI, nl2br",
   "main": "main.js",
   "scripts": {
     "test": "eslint src/main.js",
