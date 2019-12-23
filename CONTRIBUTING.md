@@ -25,7 +25,53 @@ Contributions and suggestions are very welcome and wanted. I try to respond to p
 	* https://www.taniarascia.com/how-to-install-and-use-node-js-and-npm-mac-and-windows/
 	
 
-5. Make the fix or add feature to `src/main.js`
+5. Make the fix or add features to `src/main.js`. (See detailed instructions below)
+	<details>
+  		<summary>
+		Detailed Instructions: How to add a new encoder or decoder  
+	  	</summary>
+	 	In order to keep the code clean and readable, implement the encoders/decoders in the `src/convertors` folder, as a RequireJS module:
+	
+	```
+		/**
+ 		*  File: YourFormat.js
+ 		*  Author: Your Name <your@email.com>
+ 		*  Description:  Encodes and decodes String <--> YourFormat
+ 		*/
+ 
+		define(function(require, exports) {
+   		const encodeToYourFormat = (input) => {
+		//write your encoding implementation here
+		return result; // result must be a String
+ 		};
+		
+ 		const decodeFromYourFormat = (input) => {
+		//write your encoding implementation here
+		return result; // result must be a String
+ 		 };
+  		exports.encodeToYourFormat = encodeToYourFormat;
+ 		exports.decodeFromYourFormat = decodeFromYourFormat;
+		});
+	```
+	
+	Import the module to `src/main.js` and register it using the following format: 
+	
+	```
+		const encodeToYourFormat = require('convertors/YourFormat').encodeToYourFormat;
+		const encodeFromYourFormat = require('convertors/YourFormat').encodeFromYourFormat;
+	```
+	Register your encoder/decoder  with the Context Menu, by adding it to `const ENCODERS_DECODERS ` in the following format: 
+	```
+		  const ENCODERS_DECODERS = [{
+		    title: 'YourFormat',
+		    encodeTitle: 'String to YourFormat',  //optional
+		    encoder: encodeToYourFormat, //The encoder function you imported
+		    decodeTitle: 'YourFormat to String', //optional
+		    decoder: decodeFromYourFormat,  //The encoder function you imported. If there is non, set value as 'null'
+		  }
+	```
+		
+	</details>
 
  	Run compile the extension to use/test it in Brackets using `npm run build`
  
