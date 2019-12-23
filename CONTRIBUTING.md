@@ -32,6 +32,9 @@ Contributions and suggestions are very welcome and wanted. I try to respond to p
 	 Restart Brackets via `Debug > Reload With Extensions` to see your changes.
 
 	 To debug problems, use `Debug > Show Developer Tools`. You can use console.log(), set breakpoints, etc.
+	 
+	 Resources:
+	 * https://github.com/adobe/brackets/wiki/How-to-Write-Extensions
 
 6. Sync your fork to make sure you have the latest changes.
  	
