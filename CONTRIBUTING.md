@@ -41,7 +41,7 @@ Contributions and suggestions are very welcome and wanted. I try to respond to p
  
 		define(function(require, exports) {
    		const encodeToYourFormat = (input) => {
-		//write your encoding implementation here
+		//write your decoding implementation here
 		return result; // result must be a String
  		};
 		
