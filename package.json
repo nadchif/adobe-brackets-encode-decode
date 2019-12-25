@@ -7,7 +7,7 @@
   "main": "main.js",
   "scripts": {
     "test": "eslint src/main.js",
-    "zip": "bestzip encode-decode.zip convertors/* main.js package.json",
+    "zip": "npm run build && bestzip encode-decode.zip convertors/* main.js package.json",
     "build": "eslint ./src/* && babel src -d ."
   },
   "keywords": [
