@@ -55,7 +55,7 @@ define(function(require, exports, module) {
     encoder: encodeToHtmlEntities,
     decoder: decodeFromHtmlEntities,
   }, {
-    title: 'Hexadecimal',
+    title: 'Hex',
     encoder: encodeToHex,
     decoder: decodeFromHex,
   }];
