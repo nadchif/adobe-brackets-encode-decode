@@ -22,6 +22,8 @@ define(function(require, exports, module) {
   const decodeFromHtmlEntities = require('convertors/htmlentities').decodeFromHtmlEntities;
   const encodeNlToBr = require('convertors/nl2br').encodeNlToBr;
   const decodeNlFromBr = require('convertors/nl2br').decodeNlFromBr;
+  const encodeToHex = require('convertors/hexadecimal').encodeToHex;
+  const decodeFromHex = require('convertors/hexadecimal').decodeFromHex;
 
   /**
    * Register encoders and decoders here, in this format
@@ -52,6 +54,10 @@ define(function(require, exports, module) {
     title: 'HTML Entities',
     encoder: encodeToHtmlEntities,
     decoder: decodeFromHtmlEntities,
+  }, {
+    title: 'Hexadecimal',
+    encoder: encodeToHex,
+    decoder: decodeFromHex,
   }];
 
   const CommandManager = brackets.getModule('command/CommandManager');
