@@ -7,16 +7,12 @@ adobe-brackets-encode-decode is a extension for [Adobe Brackets](https://bracket
 ![Brackets Context Menu](https://raw.githubusercontent.com/nadchif/adobe-brackets-encode-decode/master/screenshots/contextmenu.png)
 
 Currently it supports:
-* String to HTML Entities
-* String to Bin
-* String to Base 64
-* String to URI
-* Newline to Br
-* HTML Entities to String
-* Bin to String
-* Base 64 to String
-* URI to String
-* Br to Newline
+* String <--> HTML Entities
+* String <--> Bin
+* String <--> Base 64
+* String <--> URI
+* Newline <--> Br
+* String <--> Hex (by [@Zyoruk](https://github.com/Zyoruk))
 
 **Missing a convertor?** Please feel free to open an issue or contribute to the project  ([See CONTRIBUTING.md](https://github.com/nadchif/adobe-brackets-encode-decode/blob/master/CONTRIBUTING.md)).
 
