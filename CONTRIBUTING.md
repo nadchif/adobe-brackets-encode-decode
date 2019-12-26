@@ -17,7 +17,7 @@ Contributions and suggestions are very welcome and wanted. I try to respond to p
 	Resources:
 	* https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 	
-4. Setup development environment
+4. Setup the development environment
 	```
 	npm install
 	```
@@ -73,7 +73,7 @@ Contributions and suggestions are very welcome and wanted. I try to respond to p
 		
 	</details>
 
- 	Run compile the extension to use/test it in Brackets using `npm run build`
+ 	Compile the extension to use/test it in Brackets using `npm run build`
  
 	 Restart Brackets via `Debug > Reload With Extensions` to see your changes.
 
