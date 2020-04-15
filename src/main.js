@@ -2,6 +2,7 @@
 /* jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
 // eslint-disable-next-line no-unused-vars
 /* global define, $, brackets, window */
+/* eslint linebreak-style: ["error", "windows"]*/
 
 /**
  *  File: Main.js
@@ -24,7 +25,8 @@ define(function(require, exports, module) {
   const decodeNlFromBr = require('convertors/nl2br').decodeNlFromBr;
   const encodeToHex = require('convertors/hexadecimal').encodeToHex;
   const decodeFromHex = require('convertors/hexadecimal').decodeFromHex;
-
+  const encodeToMD5 = require('convertors/MD5').encodeToMD5;
+  const decodeFromMD5 = require('convertors/MD5').decodeFromMD5;
   /**
    * Register encoders and decoders here, in this format
    * {
@@ -58,6 +60,10 @@ define(function(require, exports, module) {
     title: 'Hex',
     encoder: encodeToHex,
     decoder: decodeFromHex,
+  }, {
+    title: 'MD5',
+    encoder: encodeToMD5,
+    decoder: decodeFromMD5,
   }];
 
   const CommandManager = brackets.getModule('command/CommandManager');
