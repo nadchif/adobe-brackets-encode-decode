@@ -6,16 +6,6 @@
   "commit": false,
   "contributors": [
     {
-      "login": "Zyoruk",
-      "name": "Zyoruk",
-      "avatar_url": "https://avatars1.githubusercontent.com/u/5423712?v=4",
-      "profile": "https://github.com/Zyoruk",
-      "contributions": [
-        "code",
-        "doc"
-      ]
-    },
-    {
       "login": "nadchif",
       "name": "Dan Chif",
       "avatar_url": "https://avatars0.githubusercontent.com/u/47924887?v=4",
@@ -23,6 +13,16 @@
       "contributions": [
         "code",
         "maintenance"
+      ]
+    },
+    {
+      "login": "Zyoruk",
+      "name": "Zyoruk",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5423712?v=4",
+      "profile": "https://github.com/Zyoruk",
+      "contributions": [
+        "code",
+        "doc"
       ]
     },
     {
