@@ -24,6 +24,15 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "profread",
+      "name": "Adeyemi Ridwan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/33536542?v=4",
+      "profile": "https://github.com/profread",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
