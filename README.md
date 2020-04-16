@@ -37,7 +37,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/Zyoruk"><img src="https://avatars1.githubusercontent.com/u/5423712?v=4" width="100px;" alt=""/><br /><sub><b>Zyoruk</b></sub></a><br /><a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=Zyoruk" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Zyoruk"><img src="https://avatars1.githubusercontent.com/u/5423712?v=4" width="100px;" alt=""/><br /><sub><b>Zyoruk</b></sub></a><br /><a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=Zyoruk" title="Code">💻</a> <a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=Zyoruk" title="Documentation">📖</a></td>
   </tr>
 </table>
 
