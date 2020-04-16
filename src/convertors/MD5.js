@@ -19,11 +19,7 @@ define((require, exports) =>{
   };
   
   const AddUnsigned =(lX, lY) => {
-    const lX4, lY4, lX8, lY8, lResult;
-    lX8 =(lX & 0x80000000);
-    lY8 =(lY & 0x80000000);
-    lX4 =(lX & 0x40000000);
-    lY4 =(lY & 0x40000000);
+    const lX4 =(lX & 0x40000000), lY4 =(lY & 0x40000000), lX8 =(lX & 0x80000000), lY8 =(lY & 0x80000000), lResult;
     lResult =(lX & 0x3FFFFFFF)+(lY & 0x3FFFFFFF);
     if (lX4 & lY4) {
       return (lResult ^ 0x80000000 ^ lX8 ^ lY8);
