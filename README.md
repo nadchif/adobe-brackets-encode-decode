@@ -1,8 +1,9 @@
 adobe-brackets-encode-decode
+=========
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-=========
 
 adobe-brackets-encode-decode is a extension for [Adobe Brackets](https://brackets.io
 ). This extension lets you to convert text selections to and from various formats.
@@ -37,8 +38,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/Zyoruk"><img src="https://avatars1.githubusercontent.com/u/5423712?v=4" width="100px;" alt=""/><br /><sub><b>Zyoruk</b></sub></a><br /><a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=Zyoruk" title="Code">💻</a> <a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=Zyoruk" title="Documentation">📖</a></td>
     <td align="center"><a href="http://aboutchif.com"><img src="https://avatars0.githubusercontent.com/u/47924887?v=4" width="100px;" alt=""/><br /><sub><b>Dan Chif</b></sub></a><br /><a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=nadchif" title="Code">💻</a> <a href="#maintenance-nadchif" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/Zyoruk"><img src="https://avatars1.githubusercontent.com/u/5423712?v=4" width="100px;" alt=""/><br /><sub><b>Zyoruk</b></sub></a><br /><a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=Zyoruk" title="Code">💻</a> <a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=Zyoruk" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/profread"><img src="https://avatars2.githubusercontent.com/u/33536542?v=4" width="100px;" alt=""/><br /><sub><b>Adeyemi Ridwan</b></sub></a><br /><a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=profread" title="Documentation">📖</a></td>
   </tr>
 </table>
