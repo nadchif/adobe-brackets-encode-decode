@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Zyoruk",
+      "name": "Zyoruk",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5423712?v=4",
+      "profile": "https://github.com/Zyoruk",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "adobe-brackets-encode-decode",
+  "projectOwner": "nadchif",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
