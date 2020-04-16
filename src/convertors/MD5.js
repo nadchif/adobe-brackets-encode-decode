@@ -87,28 +87,15 @@ define((require, exports) => {
            lWordArray[lNumberOfWords-1] =  lMessageLength>>>29;
            return lWordArray;
    };
-
-  /**
-  *  Function: Word to hexadecimal convertor
-  *  Referenced from : src/convertors/hexadecimal.js
-  *  Author of referenced code: Zyoruk <ce.zyoruk@gmail.com>
-  *  Description:  Encodes String --> Hex
-  */
-  const encodeToHex = (text) =>{
-//        text = text.split('');
-        let index = 0, encoded = '', hex = '';
-        
-        for (; index < text.length; index++ ){
-        
-            encoded = text.charCodeAt(index).toString(16).toUpperCase();
-            if (encoded.length === 1) 
-                encoded = `0${encoded}`;    
-            hex = hex + encoded;
-        }
-        return hex;
-      }; 
-    // ).join('');
- 
+  const WordToHex = (lValue) => {
+       var WordToHexValue="",WordToHexValue_temp="",lByte,lCount;
+       for (lCount = 0;lCount<=3;lCount++) {
+               lByte = (lValue>>>(lCount*8)) & 255;
+               WordToHexValue_temp = "0" + lByte.toString(16);
+               WordToHexValue = WordToHexValue + WordToHexValue_temp.substr(WordToHexValue_temp.length-2,2);
+       }
+       return WordToHexValue;
+  };
   // MD5 encoder function
   const encodeToMD5 =  (string) => {
        let x= Array();
@@ -196,7 +183,7 @@ define((require, exports) => {
                d= AddUnsigned(d,DD);
             }
 
-        var temp =  encodeToHex(a)+encodeToHex(b)+encodeToHex(c)+encodeToHex(d);
+        var temp =  WordToHex(a)+WordToHex(b)+WordToHex(c)+WordToHex(d);
 
         return temp.toLowerCase();
   };
