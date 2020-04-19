@@ -1,5 +1,5 @@
 'use strict';
-
+/* eslint-disable new-cap */
 /**
  *  File: MD5.js
  *  Author: Shankhanil <shankha.rik@gmail.com>
