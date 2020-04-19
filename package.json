@@ -7,8 +7,8 @@
   "main": "main.js",
   "scripts": {
     "test": "./node_modules/.bin/eslint src/main.js",
-    "zip": "npm run build && bestzip encode-decode.zip convertors/* main.js package.json",
-    "build": "eslint ./src/* && babel src -d .",
+    "zip": "npm run build && ./node_modules/.bin/bestzip encode-decode.zip lib/* convertors/* main.js requirejs-config.json package.json",
+    "build": "./node_modules/.bin/eslint ./src/* && ./node_modules/.bin/babel src -d .",
     "postinstall": "npm run build"
   },
   "keywords": [
