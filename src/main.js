@@ -2,6 +2,7 @@
 /* jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
 // eslint-disable-next-line no-unused-vars
 /* global define, $, brackets, window */
+/* eslint linebreak-style: ["error", "windows"]*/
 
 /**
  *  File: Main.js
