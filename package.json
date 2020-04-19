@@ -8,7 +8,8 @@
   "scripts": {
     "test": "eslint src/main.js",
     "zip": "npm run build && bestzip encode-decode.zip convertors/* main.js package.json",
-    "build": "eslint ./src/* && babel src -d ."
+    "build": "eslint ./src/* && babel src -d .",
+    "postinstall": "npm run build"
   },
   "keywords": [
     "brackets",
