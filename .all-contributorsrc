@@ -1,0 +1,43 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "nadchif",
+      "name": "Dan Chif",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/47924887?v=4",
+      "profile": "http://aboutchif.com",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "Zyoruk",
+      "name": "Zyoruk",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5423712?v=4",
+      "profile": "https://github.com/Zyoruk",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "profread",
+      "name": "Adeyemi Ridwan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/33536542?v=4",
+      "profile": "https://github.com/profread",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "adobe-brackets-encode-decode",
+  "projectOwner": "nadchif",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

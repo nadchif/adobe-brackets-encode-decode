@@ -1,6 +1,13 @@
-name: Node CI
+name: Node CI Tests
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+
+  pull_request:
+
+    types: [opened, synchronize, reopened]
 
 jobs:
   build:
