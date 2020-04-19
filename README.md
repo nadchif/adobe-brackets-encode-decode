@@ -18,6 +18,8 @@ Currently it supports:
 * String <--> URI
 * Newline <--> Br
 * String <--> Hex (by [@Zyoruk](https://github.com/Zyoruk))
+* String ---> MD5 (by [@Shankhanil](https://github.com/Shankhanil))
+* String ---> SHA256 (by [@Shankhanil](https://github.com/Shankhanil))
 
 **Missing a convertor?** Please feel free to open an issue or contribute to the project  ([See CONTRIBUTING.md](https://github.com/nadchif/adobe-brackets-encode-decode/blob/master/CONTRIBUTING.md)).
 
