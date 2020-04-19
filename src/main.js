@@ -24,7 +24,7 @@ define(function(require, exports, module) {
   const decodeNlFromBr = require('convertors/nl2br').decodeNlFromBr;
   const encodeToHex = require('convertors/hexadecimal').encodeToHex;
   const decodeFromHex = require('convertors/hexadecimal').decodeFromHex;
-
+  const encodeToMD5 = require('convertors/MD5').encodeToMD5;
   /**
    * Register encoders and decoders here, in this format
    * {
@@ -58,6 +58,9 @@ define(function(require, exports, module) {
     title: 'Hex',
     encoder: encodeToHex,
     decoder: decodeFromHex,
+  }, {
+    title: 'MD5',
+    encoder: encodeToMD5,
   }];
 
   const CommandManager = brackets.getModule('command/CommandManager');
