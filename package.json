@@ -35,6 +35,5 @@
     "eslint-plugin-promise": "^4.2.1"
   },
   "dependencies": {
-    "crypto-js": "^4.0.0"
   }
 }
