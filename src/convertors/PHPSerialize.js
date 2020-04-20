@@ -12,9 +12,14 @@ define((require, exports) => {
     return encode;
   };
   const decodeFromPHPSerial = (input) =>{
-    const decode = input.split(':');
-    const getString = decode[2].split('\"');
-    return getString[1];
+    if ((input.match(/:/g) || []).length == 2) {
+      const decode = input.split(':');
+      const getDecodedString = decode[2].split('\"');
+      return getDecodedString[1];
+    } else {
+      console.error('invalid PHPSerial format');
+      return;
+    }
   };
   exports.encodeToPHPSerial = encodeToPHPSerial;
   exports.decodeFromPHPSerial = decodeFromPHPSerial;
