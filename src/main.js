@@ -73,7 +73,7 @@ define(function(require, exports, module) {
     title: 'PHP Serial',
     encodeTitle: 'String to PHP Serial',
     encoder: encodeToPHPSerial,
-    decodeTitle: 'PHP Serial to String',
+    decodeTitle: 'PHP Serial to String/Int',
     decoder: decodeFromPHPSerial,
   }, {
     title: 'PHP Serial 2',
