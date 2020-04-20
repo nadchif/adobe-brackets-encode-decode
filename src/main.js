@@ -28,6 +28,8 @@ define(function(require, exports, module) {
   const encodeToSHA256 = require('convertors/SHA256').encodeToSHA256;
   const encodeToPHPSerial = require('convertors/PHPSerialize').encodeToPHPSerial;
   const decodeFromPHPSerial = require('convertors/PHPSerialize').decodeFromPHPSerial;
+  const encodeIntToPHPSerial = require('convertors/PHPSerialize').encodeIntToPHPSerial;
+
   /**
    * Register encoders and decoders here, in this format
    * {
@@ -69,8 +71,14 @@ define(function(require, exports, module) {
     encoder: encodeToSHA256,
   }, {
     title: 'PHP Serial',
+    encodeTitle: 'String to PHP Serial',
     encoder: encodeToPHPSerial,
+    decodeTitle: 'PHP Serial to String',
     decoder: decodeFromPHPSerial,
+  }, {
+    title: 'PHP Serial 2',
+    encodeTitle: 'Int to PHP Serial',
+    encoder: encodeIntToPHPSerial,
   }];
 
   const CommandManager = brackets.getModule('command/CommandManager');
