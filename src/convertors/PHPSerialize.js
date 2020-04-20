@@ -12,7 +12,9 @@ define((require, exports) => {
     return encode;
   };
   const decodeFromPHPSerial = (input) =>{
-    return;
+    const decode = input.split(':');
+    const getString = decode[2].split('\"');
+    return getString[1];
   };
   exports.encodeToPHPSerial = encodeToPHPSerial;
   exports.decodeFromPHPSerial = decodeFromPHPSerial;
