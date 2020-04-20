@@ -1,14 +1,14 @@
 {
   "name": "encode-decode-for-brackets",
-  "version": "1.0.3",
+  "version": "1.1.1",
   "title": "Encode - Decode for Brackets",
   "homepage": "https://github.com/nadchif/adobe-brackets-encode-decode",
   "description": "Encode or Decode text selections to and from various formats in Brackets. Supports Base64, Bin, HTML Entities, URI, nl2br",
   "main": "main.js",
   "scripts": {
     "test": "./node_modules/.bin/eslint src/main.js",
-    "zip": "npm run build && bestzip encode-decode.zip convertors/* main.js package.json",
-    "build": "eslint ./src/* && babel src -d .",
+    "zip": "npm run build && ./node_modules/.bin/bestzip encode-decode.zip lib/* convertors/* main.js requirejs-config.json package.json",
+    "build": "./node_modules/.bin/eslint ./src/* && ./node_modules/.bin/babel src -d .",
     "postinstall": "npm run build"
   },
   "keywords": [
@@ -35,6 +35,5 @@
     "eslint-plugin-promise": "^4.2.1"
   },
   "dependencies": {
-    "crypto-js": "^4.0.0"
   }
 }

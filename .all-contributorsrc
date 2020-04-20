@@ -32,6 +32,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Shankhanil",
+      "name": "Shankhanil Ghosh",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/17963889?v=4",
+      "profile": "https://github.com/Shankhanil",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
