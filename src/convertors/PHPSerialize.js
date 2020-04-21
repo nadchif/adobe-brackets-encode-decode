@@ -14,6 +14,7 @@ define((require, exports) => {
     * Format of PHP Serialized datatypes:
     * 1. String => s:<i>:<str>   where <i> is length of string, <str> is the string
     * 2. Int    => i:<int>       where <int> is the integer value
+    * 3. Float  => d:<float>     where <float> is the float value
     */
 
 
@@ -42,7 +43,14 @@ define((require, exports) => {
     }
     return;
   };
-
+    // PHP Serializing float
+  const encodeFloatToPHPSerial = (input) =>{
+    if (parseFloat(input) ==input) {
+      const encode = 'd:'+input;
+      return encode;
+    }
+    return;
+  };
   //    Decoding PHP serial to String/Int
   const decodeFromPHPSerial = (input) =>{
     if ( checkformat(input, 's') ) {
@@ -57,7 +65,16 @@ define((require, exports) => {
       return;
     }
   };
+    // Decoding PHP Serial to Float
+  const decodeFloatFromPHPSerial = (input) =>{
+    if ( checkformat(input, 'd') ) {
+      const decode = input.split(':');
+      return decode[1];
+    }
+  };
   exports.encodeToPHPSerial = encodeToPHPSerial;
-  exports.decodeFromPHPSerial = decodeFromPHPSerial;
   exports.encodeIntToPHPSerial = encodeIntToPHPSerial;
+  exports.encodeFloatToPHPSerial = encodeFloatToPHPSerial;
+  exports.decodeFromPHPSerial = decodeFromPHPSerial;
+  exports.decodeFloatFromPHPSerial = decodeFloatFromPHPSerial;
 });

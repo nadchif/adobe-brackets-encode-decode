@@ -29,7 +29,8 @@ define(function(require, exports, module) {
   const encodeToPHPSerial = require('convertors/PHPSerialize').encodeToPHPSerial;
   const decodeFromPHPSerial = require('convertors/PHPSerialize').decodeFromPHPSerial;
   const encodeIntToPHPSerial = require('convertors/PHPSerialize').encodeIntToPHPSerial;
-
+  const encodeFloatToPHPSerial = require('convertors/PHPSerialize').encodeFloatToPHPSerial;
+  const decodeFloatFromPHPSerial = require('convertors/PHPSerialize').decodeFloatFromPHPSerial;
   /**
    * Register encoders and decoders here, in this format
    * {
@@ -79,6 +80,12 @@ define(function(require, exports, module) {
     title: 'PHP Serial 2',
     encodeTitle: 'Int to PHP Serial',
     encoder: encodeIntToPHPSerial,
+  }, {
+    title: 'PHP Serial 3',
+    encodeTitle: 'Float to PHP Serial',
+    encoder: encodeFloatToPHPSerial,
+    decodeTitle: 'PHP Serial to Float',
+    decoder: decodeFloatFromPHPSerial,
   }];
 
   const CommandManager = brackets.getModule('command/CommandManager');
