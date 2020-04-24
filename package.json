@@ -1,6 +1,6 @@
 {
   "name": "encode-decode-for-brackets",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "title": "Encode - Decode for Brackets",
   "homepage": "https://github.com/nadchif/adobe-brackets-encode-decode",
   "description": "Encode or Decode text selections to and from various formats in Brackets. Supports Base64, Bin, HTML Entities, URI, nl2br",
