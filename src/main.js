@@ -27,10 +27,9 @@ define(function(require, exports, module) {
   const encodeToMD5 = require('convertors/MD5').encodeToMD5;
   const encodeToSHA256 = require('convertors/SHA256').encodeToSHA256;
   const encodeToPHPSerial = require('convertors/PHPSerialize').encodeToPHPSerial;
-  const decodeFromPHPSerial = require('convertors/PHPSerialize').decodeFromPHPSerial;
   const encodeIntToPHPSerial = require('convertors/PHPSerialize').encodeIntToPHPSerial;
   const encodeFloatToPHPSerial = require('convertors/PHPSerialize').encodeFloatToPHPSerial;
-  const decodeFloatFromPHPSerial = require('convertors/PHPSerialize').decodeFloatFromPHPSerial;
+  const decodeFromPHPSerial = require('convertors/PHPSerialize').decodeFromPHPSerial;
   /**
    * Register encoders and decoders here, in this format
    * {
@@ -74,7 +73,7 @@ define(function(require, exports, module) {
     title: 'PHP Serial',
     encodeTitle: 'String to PHP Serial',
     encoder: encodeToPHPSerial,
-    decodeTitle: 'PHP Serial to String/Int',
+    decodeTitle: 'PHP Serial to String/Int/Float',
     decoder: decodeFromPHPSerial,
   }, {
     title: 'PHP Serial 2',
@@ -84,8 +83,6 @@ define(function(require, exports, module) {
     title: 'PHP Serial 3',
     encodeTitle: 'Float to PHP Serial',
     encoder: encodeFloatToPHPSerial,
-    decodeTitle: 'PHP Serial to Float',
-    decoder: decodeFloatFromPHPSerial,
   }];
 
   const CommandManager = brackets.getModule('command/CommandManager');

@@ -60,21 +60,16 @@ define((require, exports) => {
     } else if (checkformat(input, 'i') ) {
       const decode = input.split(':');
       return decode[1];
+    } else if ( checkformat(input, 'd') ) {
+      const decode = input.split(':');
+      return decode[1];
     } else {
       console.error('invalid PHPSerial format');
       return;
-    }
-  };
-    // Decoding PHP Serial to Float
-  const decodeFloatFromPHPSerial = (input) =>{
-    if ( checkformat(input, 'd') ) {
-      const decode = input.split(':');
-      return decode[1];
     }
   };
   exports.encodeToPHPSerial = encodeToPHPSerial;
   exports.encodeIntToPHPSerial = encodeIntToPHPSerial;
   exports.encodeFloatToPHPSerial = encodeFloatToPHPSerial;
   exports.decodeFromPHPSerial = decodeFromPHPSerial;
-  exports.decodeFloatFromPHPSerial = decodeFloatFromPHPSerial;
 });
