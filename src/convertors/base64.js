@@ -9,13 +9,13 @@
 define(function(require, exports) {
   // encode the provided string. function must return a string;
   const encodeToBase64 = (text) => {
-    return btoa(text);
+    return btoa(unescape(encodeURIComponent(text)));
   };
   // decode the provided string. function must return a string;
   const decodeFromBase64 = (text) => {
     let encoded = null;
     try {
-      encoded = atob(text);
+      encoded = decodeURIComponent(escape(atob(text)));
     } catch (e) {
       alert('Not valid Base64 string');
     }
