@@ -30,6 +30,7 @@ define(function(require, exports, module) {
   const encodeIntToPHPSerial = require('convertors/PHPSerialize').encodeIntToPHPSerial;
   const encodeFloatToPHPSerial = require('convertors/PHPSerialize').encodeFloatToPHPSerial;
   const decodeFromPHPSerial = require('convertors/PHPSerialize').decodeFromPHPSerial;
+  const encodeToUtf16 = require('convertors/utf16').encodeToUtf16;
   /**
    * Register encoders and decoders here, in this format
    * {
@@ -83,6 +84,10 @@ define(function(require, exports, module) {
     title: 'PHP Serial 3',
     encodeTitle: 'Float to PHP Serial',
     encoder: encodeFloatToPHPSerial,
+  }, {
+    title: 'UTF-16',
+    encodeTitle: 'String to UTF-16',
+    encoder: encodeToUtf16,
   }];
 
   const CommandManager = brackets.getModule('command/CommandManager');

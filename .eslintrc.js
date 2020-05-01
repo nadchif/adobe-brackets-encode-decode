@@ -15,6 +15,7 @@ module.exports = {
     'ecmaVersion': 2018,
   },
   'rules': {
-    "max-len": [1, 140, 4]
+    "max-len": [1, 140, 4],
+    "linebreak-style": ["error", "windows"]
   },
 };
