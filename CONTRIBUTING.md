@@ -87,7 +87,9 @@ Contributions and suggestions are very welcome and wanted. I try to respond to p
 npm test
 ``` 
 to make sure there are no build or lint errors. If you are having issues with eslint errors, such as CRLF or LF or indentation, try the following
+
 	* Consider using [EditorConfig](https://editorconfig.org/#download)
+	
 	* Run the command `npm run-script lintfix` or `eslint --fix src/main.js`
 
 
