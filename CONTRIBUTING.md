@@ -88,9 +88,9 @@ npm test
 ``` 
 to make sure there are no build or lint errors. If you are having issues with eslint errors, such as CRLF or LF or indentation, try the following
 
-	* Consider using [EditorConfig](https://editorconfig.org/#download)
+   * Consider using [EditorConfig](https://editorconfig.org/#download). (This contains a `.editorconfig`)
 	
-	* Run the command `npm run-script lintfix` or `eslint --fix src/main.js`
+   * Run the command `npm run-script lintfix` or `eslint --fix src/main.js`
 
 
 7. Sync your fork to make sure you have the latest changes.
