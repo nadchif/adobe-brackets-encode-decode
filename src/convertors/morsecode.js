@@ -17,17 +17,21 @@ define(function(require, exports) {
 
   // encode the provided string. function must return a string;
   const encodeToMorseCode = (text) => {
+    let undefinedCount = 0;
     const txt = text.trim().toUpperCase().split('');
     let code = '';
     for (let i = 0; i < txt.length; i++) {
-      code += symbols[letters.indexOf(txt[i])] + ' ';
+      if (symbols[letters.indexOf(txt[i])] != undefined) {
+        code += symbols[letters.indexOf(txt[i])] + ' ';
+      } else {
+        undefinedCount++;
+      }
     }
-    return code;
+    return undefinedCount == 0 ? code : 'Please do not use unsupported characters';
   };
   // decode the provided string. function must return a string;
   const decodeFromMorseCode = function(morseCode) {
     let decResult = '';
-
     const code = morseCode.trim().replace(/_|¯|—|–/g, '-').split(' ');
     let txt = '';
 
@@ -36,7 +40,8 @@ define(function(require, exports) {
     }
     decResult = txt.replace('undefined', '');
 
-    return decResult.toLowerCase();
+    return decResult.toLowerCase().includes('undefined') ?
+      'Please do not decode morse code with unsupported characters' : decResult.toLowerCase();
   };
 
   // export the encoder for use in the main module
