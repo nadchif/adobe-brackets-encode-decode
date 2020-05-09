@@ -6,10 +6,10 @@
   "description": "Encode or Decode text selections to and from various formats in Brackets. Supports Base64, Bin, HTML Entities, URI, nl2br",
   "main": "main.js",
   "scripts": {
-    "test": "./node_modules/.bin/eslint  ./src/main.js ./src/*",
-    "lintfix": "./node_modules/.bin/eslint --fix ./src/*",
+    "test": "./node_modules/.bin/eslint ./src/main.js ./src/*  && ./node_modules/.bin/jasmine",
+    "lintfix": "./node_modules/.bin/eslint --fix ./src/main.js ./src/* ./spec/*.js",
     "zip": "npm run build && ./node_modules/.bin/bestzip encode-decode.zip lib/* convertors/* main.js requirejs-config.json package.json",
-    "build": "./node_modules/.bin/eslint ./src/* && ./node_modules/.bin/babel src -d .",
+    "build": "eslint ./src/* && babel src -d .",
     "postinstall": "npm run build"
   },
   "keywords": [
@@ -25,6 +25,7 @@
   "author": "nadchif",
   "license": "GPL-3.0",
   "devDependencies": {
+    "amd-loader": "0.0.8",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "bestzip": "^2.1.5",
@@ -32,7 +33,9 @@
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-promise": "^4.2.1"
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-jasmine": "^4.1.1",
+    "jasmine": "^3.5.0"
   },
   "dependencies": {}
 }
