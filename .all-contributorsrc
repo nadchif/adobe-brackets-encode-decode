@@ -42,6 +42,15 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "okandavut",
+      "name": "Okan DAVUT",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/10600157?v=4",
+      "profile": "https://medium.com/@okandavut",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

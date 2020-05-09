@@ -82,7 +82,18 @@ Contributions and suggestions are very welcome and wanted. I try to respond to p
 	 Resources:
 	 * https://github.com/adobe/brackets/wiki/How-to-Write-Extensions
 
-6. Sync your fork to make sure you have the latest changes.
+6. Before committing your work, remember to run 
+```
+npm test
+``` 
+to make sure there are no build or lint errors. If you are having issues with eslint errors, such as CRLF or LF or indentation, try the following
+
+   * Consider using [EditorConfig](https://editorconfig.org/#download). (This contains a `.editorconfig`)
+	
+   * Run the command `npm run-script lintfix` or `eslint --fix src/main.js`
+
+
+7. Sync your fork to make sure you have the latest changes.
  	
 	```
 	# Fetch upstream master and merge with your repo's master branch
@@ -97,12 +108,12 @@ Contributions and suggestions are very welcome and wanted. I try to respond to p
 	Resources:
 	* https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork
 	* https://gist.github.com/Chaser324/ce0505fbed06b947d962#cleaning-up-your-work
-7. Create a pull request.
+8. Create a pull request. 
 
 	Resources:
 	* https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork
 	* https://gist.github.com/Chaser324/ce0505fbed06b947d962
 	
-8. Wait for the maintainer to respond. 
+9. Wait for the maintainer to respond. 
 
 Thank you for you for your awesome contribution :-)

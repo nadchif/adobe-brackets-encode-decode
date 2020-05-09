@@ -30,6 +30,9 @@ define(function(require, exports, module) {
   const encodeIntToPHPSerial = require('convertors/PHPSerialize').encodeIntToPHPSerial;
   const encodeFloatToPHPSerial = require('convertors/PHPSerialize').encodeFloatToPHPSerial;
   const decodeFromPHPSerial = require('convertors/PHPSerialize').decodeFromPHPSerial;
+  const encodeToMorseCode = require('convertors/morsecode').encodeToMorseCode;
+  const decodeFromMorseCode = require('convertors/morsecode').decodeFromMorseCode;
+
   /**
    * Register encoders and decoders here, in this format
    * {
@@ -83,6 +86,13 @@ define(function(require, exports, module) {
     title: 'PHP Serial 3',
     encodeTitle: 'Float to PHP Serial',
     encoder: encodeFloatToPHPSerial,
+  },
+  {
+    title: 'Morse Code',
+    encodeTitle: 'String to Morse Code',
+    encoder: encodeToMorseCode,
+    decodeTitle: 'Morse Code to String',
+    decoder: decodeFromMorseCode,
   }];
 
   const CommandManager = brackets.getModule('command/CommandManager');

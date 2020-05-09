@@ -1,15 +1,14 @@
 {
   "name": "encode-decode-for-brackets",
-  "version": "1.1.1",
+  "version": "1.1.5",
   "title": "Encode - Decode for Brackets",
   "homepage": "https://github.com/nadchif/adobe-brackets-encode-decode",
   "description": "Encode or Decode text selections to and from various formats in Brackets. Supports Base64, Bin, HTML Entities, URI, nl2br",
   "main": "main.js",
   "scripts": {
-    "init": "jasmine init",
-    "test": "eslint src/main.js && jasmine --random=false",
+    "test": "./node_modules/.bin/eslint ./src/main.js ./src/*  && ./node_modules/.bin/jasmine",
+    "lintfix": "./node_modules/.bin/eslint --fix ./src/main.js ./src/* ./spec/*.js",
     "zip": "npm run build && ./node_modules/.bin/bestzip encode-decode.zip lib/* convertors/* main.js requirejs-config.json package.json",
-    "fix": "eslint --fix ./src/* && eslint --fix ./spec/*.js",
     "build": "eslint ./src/* && babel src -d .",
     "postinstall": "npm run build"
   },
@@ -38,6 +37,5 @@
     "eslint-plugin-jasmine": "^4.1.1",
     "jasmine": "^3.5.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
