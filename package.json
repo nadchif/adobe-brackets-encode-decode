@@ -6,7 +6,7 @@
   "description": "Encode or Decode text selections to and from various formats in Brackets. Supports Base64, Bin, HTML Entities, URI, nl2br",
   "main": "main.js",
   "scripts": {
-    "test": "./node_modules/.bin/eslint ./src/*",
+    "test": "./node_modules/.bin/eslint  ./src/main.js ./src/*",
     "lintfix": "./node_modules/.bin/eslint --fix ./src/*",
     "zip": "npm run build && ./node_modules/.bin/bestzip encode-decode.zip lib/* convertors/* main.js requirejs-config.json package.json",
     "build": "./node_modules/.bin/eslint ./src/* && ./node_modules/.bin/babel src -d .",
