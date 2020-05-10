@@ -8,9 +8,8 @@
   "scripts": {
     "test": "./node_modules/.bin/eslint ./src/main.js ./src/*  && ./node_modules/.bin/jasmine",
     "lintfix": "./node_modules/.bin/eslint --fix ./src/main.js ./src/* ./spec/*.js",
-    "zip": "npm run build && ./node_modules/.bin/bestzip encode-decode.zip lib/* convertors/* main.js requirejs-config.json package.json",
-    "build": "eslint ./src/* && babel src -d .",
-    "postinstall": "npm run build"
+    "zip": "npm run-script build && ./node_modules/.bin/bestzip encode-decode.zip lib/* convertors/* main.js requirejs-config.json package.json",
+    "build": "eslint ./src/* && babel src -d ."
   },
   "keywords": [
     "brackets",
@@ -39,6 +38,6 @@
     "jasmine": "^3.5.0"
   },
   "dependencies": {
-    "crpyto-js": "0.0.1-security"
+    "crypto-js": "^4.0.0"
   }
 }
