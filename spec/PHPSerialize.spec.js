@@ -36,7 +36,7 @@ define(function(require, exports, module) {
       const phpSerialObjectString = 's:4:\"1225\"';
       const phpSerialObjectInt = 'i:1225';
       const phpSerialObjectFloat = 'f:1225.0';
-      expect( encodeToPHPSerial(s)) == phpSerialObject;
+      expect( encodeToPHPSerial(s)) == phpSerialObjectString;
       expect( encodeIntToPHPSerial(s)) == phpSerialObjectInt;
       expect( encodeFloatToPHPSerial(s)) == phpSerialObjectFloat;
 

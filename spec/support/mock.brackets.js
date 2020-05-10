@@ -4,7 +4,11 @@
  */
 const brackets = () => {
   const getModule = () => {
-
+    return {
+      'showModalDialog': (err, title, msg) => {
+        // console.log(`Show Dialog:${title}\n${msg}`);
+      },
+    };
   };
   return {
     getModule,
