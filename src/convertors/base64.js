@@ -7,15 +7,31 @@
  */
 
 define(function(require, exports) {
+  // fallback support for node environment
+  const uniBtoa = (str) => {
+    try {
+      return btoa(str);
+    } catch (err) {
+      return Buffer.from(str).toString('base64');
+    }
+  };
+  const uniAtob = (b64Encoded) => {
+    try {
+      return atob(b64Encoded);
+    } catch (err) {
+      return Buffer.from(b64Encoded, 'base64').toString();
+    }
+  };
+
   // encode the provided string. function must return a string;
   const encodeToBase64 = (text) => {
-    return btoa(unescape(encodeURIComponent(text)));
+    return uniBtoa(unescape(encodeURIComponent(text)));
   };
   // decode the provided string. function must return a string;
   const decodeFromBase64 = (text) => {
     let encoded = null;
     try {
-      encoded = decodeURIComponent(escape(atob(text)));
+      encoded = decodeURIComponent(escape(uniAtob(text)));
     } catch (e) {
       alert('Not valid Base64 string');
     }

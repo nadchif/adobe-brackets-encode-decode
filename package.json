@@ -1,16 +1,15 @@
 {
   "name": "encode-decode-for-brackets",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "title": "Encode - Decode for Brackets",
   "homepage": "https://github.com/nadchif/adobe-brackets-encode-decode",
   "description": "Encode or Decode text selections to and from various formats in Brackets. Supports Base64, Bin, HTML Entities, URI, nl2br",
   "main": "main.js",
   "scripts": {
-    "test": "./node_modules/.bin/eslint  ./src/main.js ./src/*",
-    "lintfix": "./node_modules/.bin/eslint --fix ./src/*",
-    "zip": "npm run build && ./node_modules/.bin/bestzip encode-decode.zip lib/* convertors/* main.js requirejs-config.json package.json",
-    "build": "./node_modules/.bin/eslint ./src/* && ./node_modules/.bin/babel src -d .",
-    "postinstall": "npm run build"
+    "test": "./node_modules/.bin/eslint ./src/main.js ./src/*  && ./node_modules/.bin/jasmine",
+    "lintfix": "./node_modules/.bin/eslint --fix ./src/main.js ./src/* ./spec/*.js",
+    "zip": "npm run-script build && ./node_modules/.bin/bestzip encode-decode.zip lib/* convertors/* main.js requirejs-config.json package.json",
+    "build": "eslint ./src/* && babel src -d ."
   },
   "keywords": [
     "brackets",
@@ -25,14 +24,20 @@
   "author": "nadchif",
   "license": "GPL-3.0",
   "devDependencies": {
+    "amd-loader": "0.0.8",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "bestzip": "^2.1.5",
+    "crypto-js": "^4.0.0",
     "eslint": "^6.7.2",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jasmine": "^4.1.1",
     "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-promise": "^4.2.1"
+    "eslint-plugin-promise": "^4.2.1",
+    "jasmine": "^3.5.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
 }
