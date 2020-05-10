@@ -1,5 +1,5 @@
 {
     "paths": {
-        "crypto-js": "./lib/crypto-js/crypto-js"
+        "crypto-js": "./node_modules/crypto-js/crypto-js"
     }
 }
