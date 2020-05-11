@@ -26,6 +26,7 @@ define(function(require, exports, module) {
   const decodeFromHex = require('convertors/hexadecimal').decodeFromHex;
   const encodeToMD5 = require('convertors/MD5').encodeToMD5;
   const encodeToSHA256 = require('convertors/SHA256').encodeToSHA256;
+  const encodeToSHA512 = require('convertors/SHA512').encodeToSHA512;
   const encodeToPHPSerial = require('convertors/PHPSerialize').encodeToPHPSerial;
   const encodeIntToPHPSerial = require('convertors/PHPSerialize').encodeIntToPHPSerial;
   const encodeFloatToPHPSerial = require('convertors/PHPSerialize').encodeFloatToPHPSerial;
