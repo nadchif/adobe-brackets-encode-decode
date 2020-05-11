@@ -30,9 +30,9 @@ define(function(require, exports, module) {
       });
       it('Should encode and decode text with special characters', ()=>{
         // NEED REVIEW
-        const clearText = 'I am $ure buT I am tout à fait sure que c\'est un coup de Fantomas !';
+        const clearText = "I am $ure buT I am tout à fait sure que c'est un coup de Fantomas !"; // A very good french reference :p
         // eslint-disable-next-line max-len
-        const encodeText = '1d537a7f5ca23f38651809ffef58bf970d2648360ce2c0ff02fb28c413ddaed7a638f9b6387d62e4473e3449a456b33112e12494c737c1d2d36417b2544bcb3e';
+        const encodeText = '104403961887e634c0d1d6862a94fc9a6550e008e29534c239016e82619b2e0b2a0e813298036a7989bd8afc039b8ec033772b6ac54f85d4fecbb249a9223150';
         expect(encodeToSHA512(clearText)) == encodeText;
       });
     });
