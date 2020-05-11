@@ -74,6 +74,10 @@ define(function(require, exports, module) {
     title: 'SHA256',
     encoder: encodeToSHA256,
   }, {
+    title: 'SHA512',
+    encoder: encodeToSHA512,
+    encodeTitle: 'SHA-512',
+  }, {
     title: 'PHP Serial',
     encodeTitle: 'String to PHP Serial',
     encoder: encodeToPHPSerial,

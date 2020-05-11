@@ -12,7 +12,7 @@
 define((require, exports) => {
   const crypto = require('crypto-js');
   const encodeToSHA512 = (text) =>{
-    const hash = crypto.SHA512text).toString();
+    const hash = crypto.SHA512(text).toString();
     return hash;
   };
   exports.encodeToSHA512 = encodeToSHA512;
