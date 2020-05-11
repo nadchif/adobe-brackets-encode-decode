@@ -51,6 +51,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "unguest",
+      "name": "Arthur Pons",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/33666394?v=4",
+      "profile": "https://blog.arthurpons.fr",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
