@@ -8,29 +8,25 @@
  */
 
 define((require, exports) => {
-
   const encodeToASCII = (text) =>{
-      
-      let ascii_array = [];
+    const ascii_array = [];
 
-      for (const char of Array.from(text)) {
-          ascii_array.push(char.charCodeAt(0));
-      }
+    for (const char of Array.from(text)) {
+      ascii_array.push(char.charCodeAt(0));
+    }
 
-      return ascii_array.join('');
-
+    return ascii_array.join('');
   };
 
   const decodeFromASCII = (text) =>{
-      const codes = [];
-        for (let i = 0; i < text.length;) {
-          const numDigits = text[i] === '1' ? 3 : 2;
-          codes.push(text.substr(i, numDigits));
-          i += numDigits;
-        }
+    const codes = [];
+    for (let i = 0; i < text.length;) {
+      const numDigits = text[i] === '1' ? 3 : 2;
+      codes.push(text.substr(i, numDigits));
+      i += numDigits;
+    }
 
-      return String.fromCharCode(...codes);
-
+    return String.fromCharCode(...codes);
   };
   exports.encodeToASCII = encodeToASCII;
   exports.decodeFromASCII = decodeFromASCII;
