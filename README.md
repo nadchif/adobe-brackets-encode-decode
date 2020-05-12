@@ -5,7 +5,7 @@ adobe-brackets-encode-decode
 [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
-[<img src="https://img.shields.io/badge/slack-@ossenthusiasts-brown.svg?logo=slack">](https://ossenthusiasts.slack.com/)
+[<img src="https://img.shields.io/badge/slack-@ossenthusiasts-brown.svg?logo=slack">](https://join.slack.com/t/ossenthusiasts/shared_invite/zt-eh9g0u7k-l2uUmCCBhUTHY8EWZFShIw)
 
 adobe-brackets-encode-decode is a extension for [Adobe Brackets](https://brackets.io
 ). This extension lets you to convert text selections to and from various formats.
