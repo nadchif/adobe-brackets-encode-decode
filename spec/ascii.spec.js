@@ -1,10 +1,6 @@
 /**
  *  File: ASCII.spec.js
-<<<<<<< HEAD
  *  Author(s): unguest
-=======
- *  Author(s): unguest (Based on a work of Shankhanil <shankha.rik@gmail.com>)
->>>>>>> da83c91c42ae980a0a3df6a8e03d282e8a2b0e47
  */
 
 require('amd-loader');
@@ -35,7 +31,7 @@ define(function(require, exports, module) {
       });
       it('Should encode and decode text with special characters', ()=>{
         // NEED REVIEW
-        const clearText = "I am $ure buT I am tout a fait sure que c'est un coup de Fantomas !"; // A very good french reference :p
+        const clearText = 'I am $ure buT I am tout a fait sure que c\'est un coup de Fantomas !'; // A very good french reference :p
         // eslint-disable-next-line max-len
         const encodeText = '7332971093236117114101329811784327332971093211611111711632973210297105116321151171141013211311710132993910111511632117110329911111711232100101327097110116111109971153233';
         expect(encodeToASCII(clearText)) == encodeText;
