@@ -8,10 +8,10 @@ require('amd-loader');
 define(function(require, exports, module) {
   'use strict';
   describe('src/MD5.js =>', ()=>{
-    const encodeToPHPSerial = require('../convertors/PHPSerialize').encodeToPHPSerial;
-    const encodeIntToPHPSerial = require('../convertors/PHPSerialize').encodeIntToPHPSerial;
-    const encodeFloatToPHPSerial = require('../convertors/PHPSerialize').encodeFloatToPHPSerial;
-    const decodeFromPHPSerial = require('../convertors/PHPSerialize').decodeFromPHPSerial;
+    const encodeToPHPSerial = require('../src/convertors/PHPSerialize').encodeToPHPSerial;
+    const encodeIntToPHPSerial = require('../src/convertors/PHPSerialize').encodeIntToPHPSerial;
+    const encodeFloatToPHPSerial = require('../src/convertors/PHPSerialize').encodeFloatToPHPSerial;
+    const decodeFromPHPSerial = require('../src/convertors/PHPSerialize').decodeFromPHPSerial;
 
 
     exports.decodeFromPHPSerial = decodeFromPHPSerial;

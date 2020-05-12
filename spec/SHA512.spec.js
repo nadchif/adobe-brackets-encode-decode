@@ -8,7 +8,7 @@ require('amd-loader');
 define(function(require, exports, module) {
   'use strict';
   describe('src/SHA512.js =>', ()=>{
-    const encodeToSHA512 = require('../convertors/SHA512').encodeToSHA512;
+    const encodeToSHA512 = require('../src/convertors/SHA512').encodeToSHA512;
     it('Should encode and decode pure text', () => {
       const clearText = 'javascript';
       // eslint-disable-next-line max-len

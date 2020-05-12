@@ -8,7 +8,7 @@ require('amd-loader');
 define(function(require, exports, module) {
   'use strict';
   describe('src/SHA256.js =>', ()=>{
-    const encodeToSHA256 = require('../convertors/SHA256').encodeToSHA256;
+    const encodeToSHA256 = require('../src/convertors/SHA256').encodeToSHA256;
     it('Should encode and decode pure text', () => {
       const clearText = 'thisISaPUREtext';
       // eslint-disable-next-line max-len
