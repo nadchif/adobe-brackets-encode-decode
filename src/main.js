@@ -12,6 +12,8 @@
 define(function(require, exports, module) {
   'use strict';
 
+  const encodeToASCII = require('convertors/ascii').encodeToASCII;
+  const decodeFromASCII = require('convertors/ascii').decodeFromASCII;
   const encodeToURI = require('convertors/uri').encodeToURI;
   const decodeFromURI = require('convertors/uri').decodeFromURI;
   const encodeToBase64 = require('convertors/base64').encodeToBase64;
@@ -47,6 +49,12 @@ define(function(require, exports, module) {
     encoder: encodeNlToBr,
     decodeTitle: 'BR to New Line',
     decoder: decodeNlFromBr,
+  }, {
+    title: 'ASCII',
+    encodeTitle: 'String to ASCII',
+    encoder: encodeToASCII,
+    decodeTitle: 'ASCII to String',
+    decoder: decodeFromASCII,
   }, {
     title: 'URI',
     encoder: encodeToURI,
