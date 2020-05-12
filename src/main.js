@@ -27,6 +27,7 @@ define(function(require, exports, module) {
   const encodeToHex = require('convertors/hexadecimal').encodeToHex;
   const decodeFromHex = require('convertors/hexadecimal').decodeFromHex;
   const encodeToMD5 = require('convertors/MD5').encodeToMD5;
+  const encodeToSHA1 = require('convertors/SHA1').encodeToSHA1;
   const encodeToSHA256 = require('convertors/SHA256').encodeToSHA256;
   const encodeToSHA512 = require('convertors/SHA512').encodeToSHA512;
   const encodeToPHPSerial = require('convertors/PHPSerialize').encodeToPHPSerial;
@@ -84,7 +85,11 @@ define(function(require, exports, module) {
   }, {
     title: 'SHA512',
     encoder: encodeToSHA512,
-    encodeTitle: 'String to SHA-512',
+    encodeTitle: 'String to SHA 512',
+  }, {
+    title: 'SHA1',
+    encoder: encodeToSHA1,
+    encodeTitle: 'String to SHA 1',
   }, {
     title: 'PHP Serial',
     encodeTitle: 'String to PHP Serial',
