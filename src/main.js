@@ -30,6 +30,7 @@ define(function(require, exports, module) {
   const encodeToSHA1 = require('convertors/SHA1').encodeToSHA1;
   const encodeToSHA256 = require('convertors/SHA256').encodeToSHA256;
   const encodeToSHA512 = require('convertors/SHA512').encodeToSHA512;
+  const encodeToRIPEMD160 = require('convertors/RIPEMD160').encodeToRIPEMD160;
   const encodeToPHPSerial = require('convertors/PHPSerialize').encodeToPHPSerial;
   const encodeIntToPHPSerial = require('convertors/PHPSerialize').encodeIntToPHPSerial;
   const encodeFloatToPHPSerial = require('convertors/PHPSerialize').encodeFloatToPHPSerial;
@@ -90,6 +91,10 @@ define(function(require, exports, module) {
     title: 'SHA1',
     encoder: encodeToSHA1,
     encodeTitle: 'String to SHA 1',
+  }, {
+    title: 'RIPEMD160',
+    encoder: encodeToRIPEMD160,
+    encodeTitle: 'String to RIPEMD-160',
   }, {
     title: 'PHP Serial',
     encodeTitle: 'String to PHP Serial',
