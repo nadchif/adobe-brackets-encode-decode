@@ -11,15 +11,7 @@ require('amd-loader');
 // for tests that need RequireJS
 define(function(require, exports, module) {
   'use strict';
-<<<<<<< HEAD
-    describe('src/ASCII.js =>', ()=>{
-        const encodeToASCII = require('../src/convertors/ascii').encodeToASCII;
-        it('Should encode and decode pure text', () => {
-            const clearText = 'javascript';
-            // eslint-disable-next-line max-len
-            const encodedText = '106971189711599114105112116';
-           expect(encodeToASCII(clearText)) == encodedText;
-=======
+
   describe('src/ASCII.js =>', ()=>{
     const encodeToASCII = require('../convertors/ascii').encodeToASCII;
     it('Should encode and decode pure text', () => {
@@ -27,7 +19,6 @@ define(function(require, exports, module) {
       // eslint-disable-next-line max-len
       const encodedText = '106971189711599114105112116';
       expect(encodeToASCII(clearText)) == encodedText;
->>>>>>> da83c91c42ae980a0a3df6a8e03d282e8a2b0e47
     });
     it('Should encode and decode text with numbers', () => {
       const clearText = 'Python3';
@@ -51,8 +42,4 @@ define(function(require, exports, module) {
       });
     });
   });
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> da83c91c42ae980a0a3df6a8e03d282e8a2b0e47
