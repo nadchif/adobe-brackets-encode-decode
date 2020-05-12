@@ -9,13 +9,13 @@
 
 define((require, exports) => {
   const encodeToASCII = (text) =>{
-    const ascii_array = [];
+    const asciiArray = [];
 
     for (const char of Array.from(text)) {
-      ascii_array.push(char.charCodeAt(0));
+      asciiArray.push(char.charCodeAt(0));
     }
 
-    return ascii_array.join('');
+    return asciiArray.join('');
   };
 
   const decodeFromASCII = (text) =>{
