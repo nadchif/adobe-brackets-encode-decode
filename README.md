@@ -20,8 +20,10 @@ Currently it supports:
 * Newline <--> Br
 * String <--> Hex (by [@Zyoruk](https://github.com/Zyoruk))
 * String |--> MD5 (by [@Shankhanil](https://github.com/Shankhanil))
+* String |--> SHA1 (by [@unguest](https://github.com/unguest))
 * String |--> SHA256 (by [@Shankhanil](https://github.com/Shankhanil))
 * String |--> SHA512 (by [@unguest](https://github.com/unguest))
+* String |--> RIPEMD-160 (by [@unguest](https://github.com/unguest))
 * String <--> PHP Serial (by [@Shankhanil](https://github.com/Shankhanil))
 * String <--> Morse Code (by [@okandavut](https://github.com/okandavut))
 * String <--> ASCII (by [@unguest](https://github.com/unguest))
