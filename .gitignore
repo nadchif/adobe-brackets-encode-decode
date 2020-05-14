@@ -4,3 +4,4 @@ node_modules
 /main.js
 encode-decode
 encode-decode.zip
+*.bat
