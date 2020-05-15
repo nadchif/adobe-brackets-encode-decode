@@ -60,6 +60,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "flozender",
+      "name": "Tayeeb Hasan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/40818234?v=4",
+      "profile": "http://twitter.com/hasantayeeb",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
