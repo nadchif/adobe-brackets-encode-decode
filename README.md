@@ -2,7 +2,7 @@ adobe-brackets-encode-decode
 =========
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
 [<img src="https://img.shields.io/badge/slack-@ossenthusiasts-brown.svg?logo=slack">](https://join.slack.com/t/ossenthusiasts/shared_invite/zt-eh9g0u7k-l2uUmCCBhUTHY8EWZFShIw)
@@ -54,6 +54,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Shankhanil"><img src="https://avatars0.githubusercontent.com/u/17963889?v=4" width="100px;" alt=""/><br /><sub><b>Shankhanil Ghosh</b></sub></a><br /><a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=Shankhanil" title="Code">💻</a> <a href="#ideas-Shankhanil" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://medium.com/@okandavut"><img src="https://avatars3.githubusercontent.com/u/10600157?v=4" width="100px;" alt=""/><br /><sub><b>Okan DAVUT</b></sub></a><br /><a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=okandavut" title="Code">💻</a></td>
     <td align="center"><a href="https://blog.arthurpons.fr"><img src="https://avatars2.githubusercontent.com/u/33666394?v=4" width="100px;" alt=""/><br /><sub><b>Arthur Pons</b></sub></a><br /><a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=unguest" title="Code">💻</a></td>
+    <td align="center"><a href="http://twitter.com/hasantayeeb"><img src="https://avatars2.githubusercontent.com/u/40818234?v=4" width="100px;" alt=""/><br /><sub><b>Tayeeb Hasan</b></sub></a><br /><a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=flozender" title="Documentation">📖</a></td>
   </tr>
 </table>
 
