@@ -1,5 +1,3 @@
-'use strict';
-/* eslint-disable new-cap */
 /**
  *  File: MD5.js
  *  Author: Shankhanil <shankha.rik@gmail.com>
@@ -12,6 +10,7 @@
 define((require, exports) => {
   const crypto = require('crypto-js');
   const encodeToMD5 = (text) =>{
+    // eslint-disable-next-line new-cap
     const hash = crypto.MD5(text).toString();
     return hash;
   };
