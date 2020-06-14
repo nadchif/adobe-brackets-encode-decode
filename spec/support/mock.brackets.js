@@ -1,6 +1,6 @@
 /*
  * A mock module to simulate the structure of the Brackets module
- * IMPORTANT NOTE: This is note a requireJS module.
+ * IMPORTANT NOTE: This is not a requireJS module.
  */
 const brackets = () => {
   const getModule = () => {

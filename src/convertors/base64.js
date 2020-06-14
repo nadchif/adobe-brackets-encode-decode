@@ -1,12 +1,12 @@
-'use strict';
-
 /**
  *  File: BASE64.js
  *  Author: Chif <nadchif@gmail.com>
  *  Description:  Encodes and decodes String <--> Base 64
  */
 
-define(function(require, exports) {
+define((require, exports) => {
+  const Dialogs = brackets.getModule('widgets/Dialogs');
+
   // fallback support for node environment
   const uniBtoa = (str) => {
     try {
@@ -28,12 +28,12 @@ define(function(require, exports) {
     return uniBtoa(unescape(encodeURIComponent(text)));
   };
   // decode the provided string. function must return a string;
-  const decodeFromBase64 = (text) => {
+  const decodeFromBase64 = function decodeFromBase64(text) {
     let encoded = null;
     try {
       encoded = decodeURIComponent(escape(uniAtob(text)));
     } catch (e) {
-      alert('Not valid Base64 string');
+      Dialogs.showModalDialog('', 'Decode Error', 'Not valid Base64 string');
     }
     return encoded;
   };

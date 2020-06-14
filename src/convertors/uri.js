@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  *  File: URI.js
  *  Author: Chif <nadchif@gmail.com>

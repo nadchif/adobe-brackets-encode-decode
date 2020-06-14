@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  *  File: NL2BR.js
  *  Author: Chif <nadchif@gmail.com>

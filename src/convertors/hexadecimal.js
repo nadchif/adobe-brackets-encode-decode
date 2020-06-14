@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  *  File: hexadecimal.js
  *  Author: Zyoruk <ce.zyoruk@gmail.com>

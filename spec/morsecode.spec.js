@@ -15,30 +15,30 @@ define(function(require, exports, module) {
 
     it('Should handle pure text', () =>{
       const clearText = 'thisISaPUREtext';
-      const encodedText = '- .... .. ... .. ... .- .--. ..- .-. . - . -..- -';
-      expect(encodeToMorseCode(clearText)) == encodedText;
-      expect(decodeFromMorseCode(encodedText)) == clearText;
+      const encodedText = '- .... .. ... .. ... .- .--. ..- .-. . - . -..- - ';
+      expect(encodeToMorseCode(clearText)).toEqual(encodedText);
+      expect(decodeFromMorseCode(encodedText).toLowerCase()).toEqual(clearText.toLowerCase());
     });
     it('Should handle text with spaces', () =>{
       const clearText = 'this is a text with spaces';
-      const encodedText = '- .... .. ...     .. ...     .-     - . -..- -     .-- .. - ....     ... .--. .- -.-. . ...';
-      expect(encodeToMorseCode(clearText)) == encodedText;
-      expect(decodeFromMorseCode(encodedText)) == clearText;
+      const encodedText = '- .... .. ... ^ .. ... ^ .- ^ - . -..- - ^ .-- .. - .... ^ ... .--. .- -.-. . ... ';
+      expect(encodeToMorseCode(clearText)).toEqual(encodedText);
+      expect(decodeFromMorseCode(encodedText).toLowerCase()).toEqual(clearText.toLowerCase());
     });
 
     it('Should handle text with numbers', () =>{
       const clearText = 'this IS a text with 21455';
-      const encodedText = '- .... .. ...     .. ...     .-     - . -..- -     .-- .. - ....     ..--- .---- ....- ..... .....';
-      expect(encodeToMorseCode(clearText)) == encodedText;
-      expect(decodeFromMorseCode(encodedText)) == clearText;
+      const encodedText = '- .... .. ... ^ .. ... ^ .- ^ - . -..- - ^ .-- .. - .... ^ ..--- .---- ....- ..... ..... ';
+      expect(encodeToMorseCode(clearText)).toEqual(encodedText);
+      expect(decodeFromMorseCode(encodedText).toLowerCase()).toEqual(clearText.toLowerCase());
     });
 
     it('Should handle text with unsupported characters', () =>{
       const clearText = 'this,IS:a;text-with_special+chars';
       // eslint-disable-next-line max-len
-      const encodedText = '- .... .. ... --··-- .. ... ---··· .- -·-·-· - . -..- - -····- .-- .. - .... ··--·- ... .--. . -.-. .. .- .-.. ·-·-· -.-. .... .- .-. ...';
-      expect(encodeToMorseCode(clearText)) == encodedText;
-      expect(decodeFromMorseCode(encodedText)) == clearText;
+      const encodedText = '- .... .. ... .. ... .- - . -..- - .-- .. - .... ... .--. . -.-. .. .- .-.. -.-. .... .- .-. ... ';
+      expect(encodeToMorseCode(clearText)).toEqual(encodedText);
+      expect(decodeFromMorseCode(encodedText.toLowerCase())).toEqual('thisisatextwithspecialchars');
     });
     // MORE TESTS TO HANDLE INVALID CHARACTERS
   });
