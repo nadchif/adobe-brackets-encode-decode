@@ -1,5 +1,3 @@
-'use strict';
-/* eslint-disable new-cap */
 /**
  *  File: ASCII.js
  *  Author: Arthur Pons <unguestdev@gmail.com> aka unguest on github
@@ -25,7 +23,6 @@ define((require, exports) => {
       codes.push(text.substr(i, numDigits));
       i += numDigits;
     }
-
     return String.fromCharCode(...codes);
   };
   exports.encodeToASCII = encodeToASCII;

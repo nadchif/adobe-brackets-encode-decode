@@ -1,6 +1,3 @@
-
-'use strict';
-
 /**
 *  File: morsecode.js
 *  Author: Okan DAVUT <davut.okan@email.com>
@@ -37,7 +34,7 @@ define(function(require, exports) {
     return code;
   };
   // decode the provided string. function must return a string;
-  const decodeFromMorseCode = function(morseCode) {
+  const decodeFromMorseCode = (morseCode) => {
     let decResult = '';
     const code = morseCode.trim().replace(/_|¯|—|–/g, '-').split(' ');
     let txt = '';

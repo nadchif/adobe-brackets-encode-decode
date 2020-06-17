@@ -1,6 +1,6 @@
 {
   "name": "encode-decode-for-brackets",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "title": "Encode - Decode for Brackets",
   "homepage": "https://github.com/nadchif/adobe-brackets-encode-decode",
   "description": "Encode or Decode text selections to and from various formats in Brackets. Supports Base64, Bin, HTML Entities, URI, nl2br",
@@ -25,8 +25,9 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "amd-loader": "0.0.8",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "bestzip": "^2.1.5",
     "crypto-js": "^4.0.0",
     "eslint": "^6.8.0",
