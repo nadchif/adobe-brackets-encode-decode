@@ -37,6 +37,8 @@ define(function(require, exports, module) {
   const decodeFromPHPSerial = require('convertors/PHPSerialize').decodeFromPHPSerial;
   const encodeToMorseCode = require('convertors/morsecode').encodeToMorseCode;
   const decodeFromMorseCode = require('convertors/morsecode').decodeFromMorseCode;
+  const encodeToRoman = require('convertors/roman').encodeToRoman;
+  const decodeFromRoman = require('convertors/roman').decodeFromRoman;
 
   /**
    * Register encoders and decoders here, in this format
@@ -116,6 +118,13 @@ define(function(require, exports, module) {
     encoder: encodeToMorseCode,
     decodeTitle: 'Morse Code to String',
     decoder: decodeFromMorseCode,
+  },
+  {
+    title: 'Roman', // Nourma
+    encodeTitle: 'Decimal to Roman',
+    encoder: encodeToRoman,
+    decodeTitle: 'Roman to Decimal',
+    decoder: decodeFromRoman,
   }];
 
   const CommandManager = brackets.getModule('command/CommandManager');
