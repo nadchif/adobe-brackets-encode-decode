@@ -2,7 +2,7 @@ adobe-brackets-encode-decode
 =========
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
 [<img src="https://img.shields.io/badge/slack-@ossenthusiasts-brown.svg?logo=slack">](https://join.slack.com/t/ossenthusiasts/shared_invite/zt-eh9g0u7k-l2uUmCCBhUTHY8EWZFShIw)
@@ -58,6 +58,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/nourmab13"><img src="https://avatars2.githubusercontent.com/u/43863940?v=4" width="100px;" alt=""/><br /><sub><b>nourmab13</b></sub></a><br /><a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=nourmab13" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/devinekadeni"><img src="https://avatars3.githubusercontent.com/u/29223530?v=4" width="100px;" alt=""/><br /><sub><b>Devin Ekadeni</b></sub></a><br /><a href="https://github.com/nadchif/adobe-brackets-encode-decode/commits?author=devinekadeni" title="Code">💻</a></td>
   </tr>
 </table>
 
