@@ -9,7 +9,9 @@
     "test": "./node_modules/.bin/eslint ./src/main.js ./src/*  && ./node_modules/.bin/jasmine --random=false",
     "lintfix": "./node_modules/.bin/eslint --fix ./src/main.js ./src/* ./spec/*.js",
     "zip": "npm run-script build && ./node_modules/.bin/bestzip encode-decode.zip lib/* convertors/* main.js requirejs-config.json package.json",
-    "build": "./node_modules/.bin/eslint ./src/* && ./node_modules/.bin/babel src -d ."
+    "lint": "./node_modules/.bin/eslint ./src/* ",
+    "transpile": "./node_modules/.bin/babel src -d .",
+    "build": "npm run-script lint && npm run-script transpile"
   },
   "keywords": [
     "brackets",
