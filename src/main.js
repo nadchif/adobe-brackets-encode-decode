@@ -82,35 +82,43 @@ define(function(require, exports, module) {
   }, {
     title: 'MD5',
     encoder: encodeToMD5,
+    category: 'crypto',
   }, {
     title: 'SHA256',
     encoder: encodeToSHA256,
+    category: 'crypto',
   }, {
     title: 'SHA512',
     encoder: encodeToSHA512,
     encodeTitle: 'String to SHA 512',
+    category: 'crypto',
   }, {
     title: 'SHA1',
     encoder: encodeToSHA1,
     encodeTitle: 'String to SHA 1',
+    category: 'crypto',
   }, {
     title: 'RIPEMD160',
     encoder: encodeToRIPEMD160,
     encodeTitle: 'String to RIPEMD-160',
+    category: 'crypto',
   }, {
     title: 'PHP Serial',
     encodeTitle: 'String to PHP Serial',
     encoder: encodeToPHPSerial,
     decodeTitle: 'PHP Serial to String/Int/Float',
     decoder: decodeFromPHPSerial,
+    category: 'php',
   }, {
     title: 'PHP Serial 2',
     encodeTitle: 'Int to PHP Serial',
     encoder: encodeIntToPHPSerial,
+    category: 'php',
   }, {
     title: 'PHP Serial 3',
     encodeTitle: 'Float to PHP Serial',
     encoder: encodeFloatToPHPSerial,
+    category: 'php',
   },
   {
     title: 'Morse Code',
@@ -136,7 +144,7 @@ define(function(require, exports, module) {
   const EditorManager = brackets.getModule('editor/EditorManager');
   const Menus = brackets.getModule('command/Menus');
 
-  const convertInput = function convertInput(convertor) {
+  const convertInput = (convertor) => {
     const editor = EditorManager.getFocusedEditor();
     if (editor) {
       const selectedText = editor._codeMirror.getSelections();
@@ -145,22 +153,65 @@ define(function(require, exports, module) {
     }
   };
 
-  const subMenu = Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addSubMenu('Encode/Decode Selection', 'NADCHIF_ECDC_MENU');
+  const ecdcMenu = Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU).addSubMenu('Encode/Decode Selection', 'NADCHIF_ECDC_MENU');
 
-  subMenu.addMenuDivider();
+  const stageMenu = (id, categoryTitle, categoryTools) => {
+    const subMenu = ecdcMenu.addSubMenu(categoryTitle, `NADCHIF_ECDC_MENU_${id}`, Menus.FIRST);
+    subMenu.addMenuDivider();
+    categoryTools.forEach((item, index) => {
+      if (item.encoder) {
+        CommandManager.register(item.encodeTitle ? item.encodeTitle : `String to ${item.title}`, `ecdc_enc_${id}${index}`, () => {
+          convertInput(item.encoder);
+        });
+        subMenu.addMenuItem(`ecdc_enc_${id}${index}`, null, Menus.FIRST);
+      }
+      if (item.decoder) {
+        CommandManager.register(item.decodeTitle ? item.decodeTitle : `${item.title} to String`, `ecdc_dec_${id}${index}`, () => {
+          convertInput(item.decoder);
+        });
+        subMenu.addMenuItem(`ecdc_dec_${id}${index}`, null, Menus.LAST);
+      }
+    });
+  };
+  const stagedMenuEncoders = [];
+  const stagedMenuDecoders = [];
+  const stageMenuItem = (item, index) => {
+    if (!item.category) {
+      if (item.encoder) {
+        CommandManager.register(item.encodeTitle ? item.encodeTitle : `String to ${item.title}`, `ede${index}`, () => {
+          convertInput(item.encoder);
+        });
+        stagedMenuEncoders.push({
+          title: item.encodeTitle ? item.encodeTitle : `String to ${item.title}`,
+          cmd: `ede${index}`,
+        });
+      }
+      if (item.decoder) {
+        CommandManager.register(item.decodeTitle ? item.decodeTitle : `${item.title} to String`, `edd${index}`, () => {
+          convertInput(item.decoder);
+        });
+        stagedMenuDecoders.push({
+          title: item.decodeTitle ? item.decodeTitle : `${item.title} to String`,
+          cmd: `edd${index}`,
+        });
+      }
+    }
+  };
 
-  ENCODERS_DECODERS.forEach(function(item, index) {
-    if (item.encoder) {
-      CommandManager.register(item.encodeTitle ? item.encodeTitle : 'String to ' + item.title, 'ede' + index, function() {
-        convertInput(item.encoder);
-      });
-      subMenu.addMenuItem('ede' + index, null, Menus.FIRST);
-    }
-    if (item.decoder) {
-      CommandManager.register(item.decodeTitle ? item.decodeTitle : item.title + ' to String', 'edd' + index, function() {
-        convertInput(item.decoder);
-      });
-      subMenu.addMenuItem('edd' + index, null, Menus.LAST);
-    }
+  ENCODERS_DECODERS.forEach(stageMenuItem);
+
+  stagedMenuEncoders.sort((a, b)=> {
+    return a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1;
+  }).forEach((item) => {
+    ecdcMenu.addMenuItem(item.cmd, null);
   });
+  ecdcMenu.addMenuDivider();
+  stagedMenuDecoders.sort((a, b)=> {
+    return a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1;
+  }).forEach((item) => {
+    ecdcMenu.addMenuItem(item.cmd, null);
+  });
+
+  stageMenu('php', 'PHP', ENCODERS_DECODERS.filter((item)=> item.category == 'php'));
+  stageMenu('crypto', 'Crypto', ENCODERS_DECODERS.filter((item)=> item.category == 'crypto'));
 });
